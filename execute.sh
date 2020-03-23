@@ -8,8 +8,6 @@ pais=$(grep '<title>' covid19brasil | cut -d '>' -f2 | cut -d ' ' -f1 | tr z s)
 totalBRASIL=$(grep '<title>' covid19brasil | cut -d ':' -f2 | cut -d ' ' -f2)
 totalMORTES=$(grep '<title>' covid19brasil | cut -d ':' -f2 | cut -d ' ' -f5)
 totalRECUPERADO=$(grep color:#8ACA2B covid19brasil | cut -d '>' -f2 | cut -d '<' -f1 | tail -n1)
-casosATIVOS=$(grep number-table-main covid19brasil | cut -d '>' -f2 | cut -d '{' -f2 | cut -d '<' -f1 | tail -n2 | head -n1)
-casosFECHADOS=$(grep number-table-main covid19brasil | cut -d '>' -f2 | cut -d '{' -f2 | cut -d '<' -f1 | tail -n1)
 casosSUAVES=$(grep color:#8080FF covid19brasil | cut -d '>' -f2 | cut -d '<' -f1)
 casosCRITICOS=$(grep color:red covid19brasil | cut -d '>' -f3 | cut -d '<' -f1)
 rm covid19
@@ -20,8 +18,6 @@ echo
 echo -e "CONTAMINADOS no $pais: \033[01;33m$totalBRASIL\033[01;00m"
 echo -e "MORTOS no $pais: \033[01;31m$totalMORTES\033[01;00m"
 echo -e "RECUPERADOS no $pais: \033[01;32m$totalRECUPERADO\033[01;00m"
-echo "CASOS ATIVOS no $pais: $casosATIVOS"
-echo "CASOS FECHADOS no $pais: $casosFECHADOS"
 echo -e "Pacientes em condicoes SUAVES no $pais: \033[01;36m$casosSUAVES\033[01;00m"
 echo -e "Pacientes em condicoes CRITICAS no $pais: \033[01;31m$casosCRITICOS\033[01;00m"
 echo
