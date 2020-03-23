@@ -24,5 +24,5 @@ echo "CASOS ATIVOS no $pais: $casosATIVOS"
 echo "CASOS FECHADOS no $pais: $casosFECHADOS"
 echo -e "Pacientes em condicoes SUAVES no $pais: \033[01;36m$casosSUAVES\033[01;00m"
 echo -e "Pacientes em condicoes CRITICAS no $pais: \033[01;31m$casosCRITICOS\033[01;00m"
-echo"
+echo
 exit
