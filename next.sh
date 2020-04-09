@@ -64,18 +64,18 @@ casosSUAVESdiferenca=$(($casosSUAVESatualexec - $casosSUAVESultimaexec))
 casosCRITICOSultimaexec=$(cat .estatistica | tr -d ',' | tail -n11 | head -n1)
 casosCRITICOSatualexec=$(cat .estatistica | tr -d ',' | tail -n1 | head -n1)
 casosCRITICOSdiferenca=$(($casosCRITICOSatualexec - $casosCRITICOSultimaexec))
-echo "ESTATISTICA - AUMENTO DO COVID-19 DESDE A ULTIMA EXECUÇÃO DO SCRIPT"
+echo "ESTATISTICA - AUMENTO DO COVID-19 DESDE A ULTIMA EXECUCAO DO SCRIPT"
 echo
-echo "DATA DA ULTIMA EXECUÇÃO: $DATAultimaexec"
-echo "DATA DA EXECUÇÃO ATUAL: $DATAatualexec"
+echo "DATA DA ULTIMA EXECUCAO: $DATAultimaexec"
+echo "DATA DA EXECUAOO ATUAL: $DATAatualexec"
 echo
-echo -e "\033[01;33m$totalMUNDOdiferenca\033[01;00m CONTAMINADOS no MUNDO INTEIRO desde a Última Execução."
-echo -e "\033[01;31m$totalMORTOSdiferenca\033[01;00m MORTES no MUNDO INTEIRO desde a Última Execução."
+echo -e "\033[01;33m$totalMUNDOdiferenca\033[01;00m CONTAMINADOS no MUNDO INTEIRO desde a Ultima Execucao."
+echo -e "\033[01;31m$totalMORTOSdiferenca\033[01;00m MORTES no MUNDO INTEIRO desde a Ultima Execucao."
 echo
-echo -e "\033[01;33m$totalBRASILdiferenca\033[01;00m CONTAMINADOS no $pais desde a Última Execução."
-echo -e "\033[01;31m$totalMORTESdiferenca\033[01;00m MORTOS no $pais desde a Última Execução."
-echo -e "\033[01;32m$totalRECUPERADOdiferenca\033[01;00m RECUPERADOS no $pais desde a Última Execução."
-echo -e "\033[01;36m$casosSUAVESdiferenca\033[01;00m CASOS SUAVES no $pais desde a Última Execução."
-echo -e "\033[01;31m$casosCRITICOSdiferenca\033[01;00m CASOS CRÍTICOS no $pais desde a Última Execução."
+echo -e "\033[01;33m$totalBRASILdiferenca\033[01;00m CONTAMINADOS no $pais desde a Ultima Execucao."
+echo -e "\033[01;31m$totalMORTESdiferenca\033[01;00m MORTOS no $pais desde a Ultima Execucao."
+echo -e "\033[01;32m$totalRECUPERADOdiferenca\033[01;00m RECUPERADOS no $pais desde a Ultima Execucao."
+echo -e "\033[01;36m$casosSUAVESdiferenca\033[01;00m CASOS SUAVES no $pais desde a Ultima Execucao."
+echo -e "\033[01;31m$casosCRITICOSdiferenca\033[01;00m CASOS CRITICOS no $pais desde a Ultima Execucao."
 echo
 exit
