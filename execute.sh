@@ -1,4 +1,9 @@
 #!/bin/bash
+dia=$(date +%d)
+mes=$(date +%m)
+ano=$(date +%Y)
+hora=$(date +%H)
+minuto=$(date +%M)
 curl -s -C - -o covid19 https://www.worldometers.info/coronavirus/
 curl -s -C - -o covid19brasil https://www.worldometers.info/coronavirus/country/brazil  
 totalMUNDO=$(grep '<title>' covid19 | cut -d ':' -f2 | cut -d ' ' -f2)
