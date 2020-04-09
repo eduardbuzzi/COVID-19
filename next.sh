@@ -67,7 +67,7 @@ casosCRITICOSdiferenca=$(($casosCRITICOSatualexec - $casosCRITICOSultimaexec))
 echo "ESTATISTICA - AUMENTO DO COVID-19 DESDE A ULTIMA EXECUCAO DO SCRIPT"
 echo
 echo "DATA DA ULTIMA EXECUCAO: $DATAultimaexec"
-echo "DATA DA EXECUAOO ATUAL: $DATAatualexec"
+echo "DATA DA EXECUCAO ATUAL: $DATAatualexec"
 echo
 echo -e "\033[01;33m$totalMUNDOdiferenca\033[01;00m CONTAMINADOS no MUNDO INTEIRO desde a Ultima Execucao."
 echo -e "\033[01;31m$totalMORTOSdiferenca\033[01;00m MORTES no MUNDO INTEIRO desde a Ultima Execucao."
